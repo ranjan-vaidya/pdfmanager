@@ -9,6 +9,7 @@ import {CgProfile} from "react-icons/cg"
 import "./header.scss"
 import {MdOutlineSpaceDashboard, MdLogout} from 'react-icons/md';
 import {AiFillCaretDown} from 'react-icons/ai'
+import {FaRegFilePdf} from 'react-icons/fa'
 
 import { loadUser, LogoutUser } from "../../Actions/User";
 import { useDispatch, useSelector } from "react-redux";
@@ -62,7 +63,7 @@ const Header = ({sidebarOpen,setSidebarOpen}) => {
         }
 
         <div onClick={gotohome} className="cursor-pointer">
-          <p className='font-bold flex items-center text-xl'>OLX Clone <GiShoppingBag className='text-gray-800 ml-2'/></p>
+          <p className='font-bold flex items-center text-xl'>PDF Manager <FaRegFilePdf className='text-gray-800 ml-2'/></p>
         </div>
         <div>
           <div className={`nav_dropLinks ${active && !isAuthenticated?'show':'hide'} `}>
