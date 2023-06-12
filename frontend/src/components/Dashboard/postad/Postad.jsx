@@ -74,17 +74,14 @@ const Postad = () => {
         <form onSubmit={handleSubmit} className='flex flex-col justify-center items-center my-12'>
 
                 <img src={image || productImage} alt="Product" className='h-[13rem] w-[13rem] mb-4 object-cover rounded-full' />
-                <p className='my-2'>Upload Image: </p>
+                <p className='my-2'>Upload Document: </p>
                 <input type="file" onChange={handleImageChange} />
-                <input type='text' name='title' value={title} onChange={(e)=>setTitle(e.target.value)} placeholder="Ad title / Item name" className='bg-gray-100 mt-4 w-64 p-2 flex items-center mb-3 outline-none text-sm flex-1' />
+                <input type='text' name='title' value={title} onChange={(e)=>setTitle(e.target.value)} placeholder="Ad title / Document name" className='bg-gray-100 mt-4 w-64 p-2 flex items-center mb-3 outline-none text-sm flex-1' />
 
-                <textarea type='text' name='desc' value={description} onChange={(e)=>setDesc(e.target.value)} rows={4}  placeholder="Item description" className='bg-gray-100 w-64 p-2 flex items-center mb-3 outline-none text-sm flex-1' />
-                <input type='text' name='Category' value={category} onChange={(e)=>setCategory(e.target.value)} placeholder="Item Category" className='bg-gray-100 w-64 p-2 flex items-center mb-3 outline-none text-sm flex-1' />
-                <input type='text' name='Brand' value={brand} onChange={(e)=>setBrand(e.target.value)} placeholder="Item Brand" className='bg-gray-100 w-64 p-2 flex items-center mb-3 outline-none text-sm flex-1' />
-                <input type='text' name='Condition' value={condition} onChange={(e)=>setCondition(e.target.value)} placeholder="Item Condition" className='bg-gray-100 w-64 p-2 flex items-center mb-3 outline-none text-sm flex-1' />
-                <input type='number' name='price' value={price} onChange={(e)=>setPrice(e.target.value)} placeholder="Item price in ₹" className='bg-gray-100 w-64 p-2 flex items-center mb-3 outline-none text-sm flex-1' />
-                
-                <button type='submit' disabled={loading} className={`border-2 border-gray-500 mt-8 text-gray-600 font-semibold ${loading? "bg-red-400" : ""} rounded-lg px-12 py-2 inline-block hover:bg-gray-500 hover:text-white hover:cursor-pointer`}>Add item</button>
+                <textarea type='text' name='desc' value={description} onChange={(e)=>setDesc(e.target.value)} rows={4}  placeholder="Document description" className='bg-gray-100 w-64 p-2 flex items-center mb-3 outline-none text-sm flex-1' />
+                <input type='text' name='Category' value={category} onChange={(e)=>setCategory(e.target.value)} placeholder="Document Category" className='bg-gray-100 w-64 p-2 flex items-center mb-3 outline-none text-sm flex-1' />
+                              
+                <button type='submit' disabled={loading} className={`border-2 border-gray-500 mt-8 text-gray-600 font-semibold ${loading? "bg-red-400" : ""} rounded-lg px-12 py-2 inline-block hover:bg-gray-500 hover:text-white hover:cursor-pointer`}>Add Document</button>
 
         </form>            
     </div>

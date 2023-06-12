@@ -47,7 +47,7 @@ const Sidebar = () => {
           <h1
             className={`${ (location.pathname === "/dashboard/products" || location.pathname === `/dashboard/products/${id}`) ? "text-black font-semibold" : "text-gray-600"} group-hover:text-black xl:flex hidden`}
           >
-            Products
+            All Documents
           </h1>
         </div>
 
@@ -63,11 +63,11 @@ const Sidebar = () => {
           <h1
             className={`${(location.pathname === "/dashboard/myposts" || location.pathname === `/dashboard/myposts/${id}`)? "text-black font-semibold" : "text-gray-600"} group-hover:text-black xl:flex hidden`}
           >
-            My posts
+            My Documents
           </h1>
         </div>
 
-        <div
+        {/* <div
           onClick={() => { navigate("/dashboard/mypurchases") }}
           className={`w-full flex items-center justify-start space-x-8 px-4 cursor-pointer group hover:border-gray-900 border-l-4 border-transparent ${location.pathname === "/dashboard/mypurchases" && "border-gray-900"
             }`}
@@ -79,8 +79,8 @@ const Sidebar = () => {
             className={`${location.pathname === "/dashboard/mypurchases"? "text-black font-semibold" : "text-gray-600"}  group-hover:text-black xl:flex hidden`}
           >
             My Purchases
-          </h1>
-        </div>
+          </h1> */}
+        {/* </div> */}
 
         <div
           onClick={() => {navigate("/dashboard/postad") }}
@@ -93,7 +93,7 @@ const Sidebar = () => {
           <h1
             className={`${location.pathname === "/dashboard/postad"? "text-black font-semibold" : "text-gray-600"}  group-hover:text-black xl:flex hidden`}
           >
-            Post ad
+            Add Documents
           </h1>
         </div>
 

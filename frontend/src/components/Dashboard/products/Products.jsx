@@ -56,7 +56,7 @@ const Products = ({setPost, setPdfUrl}) => {
   },[error, dispatch])
   return (loading? <Loader /> :
     <div className='mt-6'>
-      <p className='font-bold text-2xl ml-2 md:ml-4'>Recent posts:</p>
+      <p className='font-bold text-2xl ml-2 md:ml-4'>All Documents</p>
 
       {/* <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 sm:gap-4'> */}
       <div className='flex flex-wrap items-center justify-center'>
@@ -89,7 +89,7 @@ const Products = ({setPost, setPdfUrl}) => {
             />
             {/* <p className={`absolute bottom-0 ${showModal? "" : "z-10"} bg-white w-full px-1 text-center py-2 rounded-b-md`}>{movie.title}</p> */}
             <div className={`absolute bottom-0 ${location.pathname==="/dashboard/products"? "z-10" : ""} bg-white w-full px-3 text-left py-2 rounded-b-md`}>
-              <p className='text-lg font-semibold'>₹ {post.price}</p>
+              {/* <p className='text-lg font-semibold'>₹ {post.price}</p> */}
               <p>Item name: {post.title}</p>
               <p
                 className='hover:cursor-pointer'

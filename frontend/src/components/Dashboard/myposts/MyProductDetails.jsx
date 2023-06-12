@@ -55,7 +55,7 @@ const MyProductDetails = ({post}) => {
                 className="w-[100px] md:w-[266px] md:mr-16 object-cover"
             />
             <div className='md:ml-6 mt-4 md:mt-0'>
-                <p><b>Item name: </b>{post.title} <b>{post.sold?" (Sold)" : " (Unsold)"}</b></p>
+                {/* <p><b>Item name: </b>{post.title} <b>{post.sold?" (Sold)" : " (Unsold)"}</b></p> */}
                 <p><b>Owner: </b>{post.owner.name}</p>
                 {post.sold && <p><b>Buyer: </b>{post.buyer.name}</p>}
                 <p><b>Price: </b>₹{post.price}</p>
