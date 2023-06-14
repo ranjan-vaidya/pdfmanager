@@ -39,7 +39,7 @@ const Postad = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        if(title==="" || image==="" || description==="" || category==="" || brand==="" || condition === ""){
+        if(title==="" || image==="" || description==="" || category===""){
             toast.error("Please fill all the details")
             return;
         }
